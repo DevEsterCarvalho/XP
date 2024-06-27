@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Email Template</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #1E1E1E;
+        }
+        .content, .informacoes, .cdi {
+            width: 688px;
+            background-color: #000000;
+            align-items: center;
+        }
+        .titulo-aviso, .informacao-principal, .titulo-secundario, .subtexto, .linha-cdi, .botao-investir, .footer {
+            font-family: "Inter";
+            font-weight: 300;
+            text-align: center;
+        }
+        .titulo-aviso, .botao-investir{
+            background-color: #FEBE10;
+            color: #000000;
+            font-weight: bold;
+            text-align: center;
+        }
+        .botao-investir {
+            width: 216px;
+            height: 55.56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            cursor: pointer;
+        }
+        .inicio {
+            width: 100%;
+            height: 63px;
+        }
+        .titulo-aviso {
+            font-size: 22px;
+            padding: 20px 0;
+        }
+        .informacao-principal {
+            color: #ffffff;
+            font-size: 24.98px;
+            font-weight: 400;
+            width: 339px;
+        }
+        .imagem-principal-trigo {
+            width: 100%;
+            height: 292px;
+        }
+        .informacao-principal p {
+            margin: 0;
+            padding: 40px 0 10px 0;
+        }
+        .titulo-secundario {
+            width: 297px;
+            color: #FEBE10;
+            font-size:35px;
+            font-weight: bold;
+        }
+        .titulo-secundario p {
+            margin: 0;
+        }
+        .linha-cdi {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0 auto;
+            padding: 5px;
+        }
+        .linha-cdi .strong {
+            margin-right: 10px;
+            color: #00CFB9;
+            font-size: 80px;
+            font-weight: bold;
+        }
+        .linha-cdi span, .subtexto p {
+            margin: 0;
+            padding: 0px;
+        }
+        .subtexto {
+            color: #ffffff;
+            font-size: 30px;
+            text-align: center;
+            margin: 0;
+            width: 265px;
+        }
+        .footer {
+            background-color: #70bbd9;
+            color: #ffffff;
+            font-size: 14px;
+            padding: 30px;
+        }
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td align="center" style="padding: 10px 0;">
+                <table class="content">
+                    <tr class="inicio">
+                        <td class="titulo-aviso">
+                            <p>PRODUTO LIMITADO AO ESTOQUE</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="imagem-principal-trigo" src="/assets/imagem_principal.jpg" alt="">
+                        </td>
+                    </tr>
+                    <table class="informacoes">
+                        <tr>
+                            <td class="informacao-principal">
+                                <p>Potencialize seus ganhos<br>investindo com a XP na</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="titulo-secundario">
+                                <p>LCA BANCO CNH</p>
+                                <p style="font-size: 48px;">CAPITAL S/A</p>
+                            </td>
+                        </tr>  
+                        <tr>
+                            <td class="subtexto">
+                                <p style="font-size: 32.46px; padding-right: 220px; padding-top: 20px;">Até</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="linha-cdi">
+                                <span class="strong">100%</span>
+                                <span>DO<br>CDI</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="subtexto">
+                                <p style="padding-bottom: 25px;">e Isenção de IR!</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <div class="botao-investir">
+                                    <p>Investir na LCA CNH</p>
+                                </div>
+                                
+                            </td>
+                        </tr>               
+                    </table>
+        
+                    <tr>
+                        <td class="footer">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td width="75%">
+                                        &copy; 2024, Exemplo de E-mail. Todos os direitos reservados.<br/>
+                                    </td>
+                                    <td align="right" width="25%">
+                                        <a href="#">Link</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
