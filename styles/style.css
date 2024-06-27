@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw; 
-    height: 100vh; 
     background-color: #1E1E1E;
     display: flex;
     justify-content: center;
@@ -17,24 +16,28 @@ body {
     background-color: #000000;
 }
 
-.content, .informacoes, .cdi, .descricao, .lca {
+.content, .informacoes, .cdi, .descricao, .lca, .tempo {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
 
-.titulo-aviso, .informacao-principal, .titulo-secundario, .subtexto, .linha-cdi, .botao-investir, .lca, .beneficios, .beneficio-fiscal{
+.titulo-aviso, .titulo-aviso-secundario, .informacao-principal, 
+.titulo-secundario,.subtexto, .linha-cdi, .botao-investir, 
+.lca, .beneficios, .beneficio-fiscal, .tempo, .passo, .titulo-ted{
     font-family: "Inter";
     font-weight: 300;
     text-align: center;
 }
 
-.informacao-principal, .linha-cdi, .subtexto, .descricao, .lca {
+.informacao-principal, .linha-cdi, .subtexto, .descricao, 
+.lca, .tempo, .beneficio, .beneficio-fiscal, .passo, .passo-ted, 
+.dados-numero-ted {
     color: #ffffff;
 }
 
-.titulo-aviso, .botao-investir {
+.titulo-aviso, .titulo-aviso-secundario, .botao-investir {
     background-color: #FEBE10;
     color: #000000;
     font-weight: bold;
@@ -55,6 +58,14 @@ body {
     font-size: 22px;
     width: 600px;
     height: 63px;
+    border-radius: 10px;
+}
+
+.titulo-aviso-secundario {
+    font-size: 22px;
+    width: 600px;
+    height: 63px;
+    border-radius: 0;
 }
 
 .informacao-principal {
@@ -144,10 +155,11 @@ body {
     text-decoration:underline;
 }
 
-.beneficios{
+.beneficios, .container-tempo {
     display: flex; 
     justify-content: center;
 }
+
 .beneficio, .beneficio-fiscal {
     width: 255px;
     height: 206px;
@@ -155,7 +167,6 @@ body {
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
-    color: #ffffff;
     text-align:left;
     align-items: center;
 }
@@ -170,6 +181,30 @@ body {
     margin: 15px; 
 }
 
+.circulo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo img {
+    width: 50%;
+    height: 50%;
+}
+.beneficio-fiscal img, .lca img, .passo img {
+    width: 28px;
+    height: 28px;
+}
+
+.tempo img {
+    width: 48.07px;
+    height: 60px;
+}
+
 .beneficio-fiscal p {
     padding: 0 10px;
     text-align: left;
@@ -178,6 +213,200 @@ body {
 .beneficios-titulo {
     font-size: 17.5px;
     font-weight: bold;
+}
+
+.beneficios-subtitulo {
+    font-size: 16px;
+}
+
+.tempo{ 
+    margin-top: 20px;
+    padding-top: 30px;
+    border: 1px solid #3D3D3D;
+    width: 520px;
+    height: 300px;
+    text-align: center;
+}
+
+.tempo-titulo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tempo-subtitulo {
+    font-size: 14px;
+    color: #D9D9D9;
+}
+
+.passo-a-passo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numeros-passo-a-passo {
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+    color: #FEBE10;
+}
+
+.passo{
+    width: 520px;
+    height: 100px;
+    border: 1px solid #3D3D3D;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.passo-ted {
+    height: 300px;
+    align-items: flex-start;
+    padding-top: 5px;
+}
+
+.passo-conta {
+    height: 132px;
+}
+.passo-titulo {
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.passo-titulo-ted {
+    font-size: 17.5px;
+    margin: 0;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.passo-texto {
+    display: flex;
+    flex-direction:column;
+    padding: 0 15px;    
+}
+
+.passo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.ted {
+    align-content: end;
+    width: 395px;
+    height: 200px;
+    border: 1px solid #3D3D3D;
+    box-sizing: border-box;
+}
+
+.titulo-ted {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.dados {
+    display: flex;
+    justify-content:space-between;
+}
+
+.dados-descricao-ted, .dados-numero-ted {
+    width: 32%;
+    text-align: center;
+}
+
+.dados-descricao-ted {
+    color:#ffffff;
+    font-size: 16px;
+}
+.dados-numero-ted {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.infomacao-ted, .lembrete-ted {
+    font-weight: 500;
+    text-align: center;
+}
+
+.infomacao-ted {
+    font-size: 12px;
+    color: #ADADAD;
+}
+
+.lembrete-ted {
+    font-size:12px ;
+}
+
+.atendimento {
+    background-color: #ffffff;
+    width: 100%;
+    height: 398px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.descricao-atendimento {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+
+.atendimento img {
+    width: 100%;
+    height: 50%;
+}
+
+.titulo-atendimento {
+    font-size: 24px;
+    font-family: "Inter";
+    font-weight: 500;
+    color: #000000;
+    text-align: left;
+}
+
+.subtitulo-atendimento {
+    font-size: 16px;
+    font-family: "Inter";
+    font-weight: 400;
+    color: #000000;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.botao-atendimento {
+    color: #FEBE10;
+    background-color: #000000;
+    width: 221px;
+    height: 50px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+hr {
+    width: 520px;
+    height: 1px;
+    background-color: #3D3D3D;
+    border: none;
+    margin: 20px auto;
 }
 
 
